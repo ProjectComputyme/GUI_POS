@@ -1,0 +1,284 @@
+G:\Computyme\Computyme\Computyme\bin\ApplicationInsights.config
+G:\Computyme\Computyme\Computyme\bin\Computyme.dll.config
+G:\Computyme\Computyme\Computyme\bin\Computyme.dll
+G:\Computyme\Computyme\Computyme\bin\Computyme.pdb
+G:\Computyme\Computyme\Computyme\bin\roslyn\csc.exe
+G:\Computyme\Computyme\Computyme\bin\roslyn\csc.exe.config
+G:\Computyme\Computyme\Computyme\bin\roslyn\csc.rsp
+G:\Computyme\Computyme\Computyme\bin\roslyn\csi.exe
+G:\Computyme\Computyme\Computyme\bin\roslyn\csi.exe.config
+G:\Computyme\Computyme\Computyme\bin\roslyn\csi.rsp
+G:\Computyme\Computyme\Computyme\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Computyme\Computyme\Computyme\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\Microsoft.Managed.Core.targets
+G:\Computyme\Computyme\Computyme\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.AppContext.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Collections.Immutable.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Console.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.IO.Compression.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.IO.FileSystem.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.IO.Pipes.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Reflection.Metadata.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Security.AccessControl.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Security.Claims.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Security.Principal.Windows.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.ValueTuple.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Xml.XmlDocument.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Xml.XPath.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\Computyme\Computyme\Computyme\bin\roslyn\vbc.exe
+G:\Computyme\Computyme\Computyme\bin\roslyn\vbc.exe.config
+G:\Computyme\Computyme\Computyme\bin\roslyn\vbc.rsp
+G:\Computyme\Computyme\Computyme\bin\roslyn\VBCSCompiler.exe
+G:\Computyme\Computyme\Computyme\bin\roslyn\VBCSCompiler.exe.config
+G:\Computyme\Computyme\Computyme\bin\Antlr3.Runtime.dll
+G:\Computyme\Computyme\Computyme\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Computyme\Computyme\Computyme\bin\Microsoft.AI.DependencyCollector.dll
+G:\Computyme\Computyme\Computyme\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Computyme\Computyme\Computyme\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Computyme\Computyme\Computyme\bin\Microsoft.AI.Web.dll
+G:\Computyme\Computyme\Computyme\bin\Microsoft.AI.WindowsServer.dll
+G:\Computyme\Computyme\Computyme\bin\Microsoft.ApplicationInsights.dll
+G:\Computyme\Computyme\Computyme\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+G:\Computyme\Computyme\Computyme\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Computyme\Computyme\Computyme\bin\Microsoft.Web.Infrastructure.dll
+G:\Computyme\Computyme\Computyme\bin\Newtonsoft.Json.dll
+G:\Computyme\Computyme\Computyme\bin\System.Diagnostics.DiagnosticSource.dll
+G:\Computyme\Computyme\Computyme\bin\System.Web.Helpers.dll
+G:\Computyme\Computyme\Computyme\bin\System.Web.Mvc.dll
+G:\Computyme\Computyme\Computyme\bin\System.Web.Optimization.dll
+G:\Computyme\Computyme\Computyme\bin\System.Web.Razor.dll
+G:\Computyme\Computyme\Computyme\bin\System.Web.WebPages.Deployment.dll
+G:\Computyme\Computyme\Computyme\bin\System.Web.WebPages.dll
+G:\Computyme\Computyme\Computyme\bin\System.Web.WebPages.Razor.dll
+G:\Computyme\Computyme\Computyme\bin\U2.Data.Client.dll
+G:\Computyme\Computyme\Computyme\bin\WebGrease.dll
+G:\Computyme\Computyme\Computyme\bin\System.Web.Helpers.xml
+G:\Computyme\Computyme\Computyme\bin\System.Web.Mvc.xml
+G:\Computyme\Computyme\Computyme\bin\System.Web.Optimization.xml
+G:\Computyme\Computyme\Computyme\bin\System.Web.Razor.xml
+G:\Computyme\Computyme\Computyme\bin\System.Web.WebPages.xml
+G:\Computyme\Computyme\Computyme\bin\System.Web.WebPages.Deployment.xml
+G:\Computyme\Computyme\Computyme\bin\System.Web.WebPages.Razor.xml
+G:\Computyme\Computyme\Computyme\bin\Newtonsoft.Json.xml
+G:\Computyme\Computyme\Computyme\bin\U2.Data.Client.xml
+G:\Computyme\Computyme\Computyme\bin\Antlr3.Runtime.pdb
+G:\Computyme\Computyme\Computyme\bin\System.Diagnostics.DiagnosticSource.xml
+G:\Computyme\Computyme\Computyme\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+G:\Computyme\Computyme\Computyme\bin\Microsoft.AI.DependencyCollector.xml
+G:\Computyme\Computyme\Computyme\bin\Microsoft.AI.WindowsServer.xml
+G:\Computyme\Computyme\Computyme\bin\Microsoft.AI.Web.xml
+G:\Computyme\Computyme\Computyme\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Computyme\Computyme\Computyme\obj\Debug\Computyme.csproj.CoreCompileInputs.cache
+G:\Computyme\Computyme\Computyme\obj\Debug\Computyme.csproj.CopyComplete
+G:\Computyme\Computyme\Computyme\obj\Debug\Computyme.dll
+G:\Computyme\Computyme\Computyme\obj\Debug\Computyme.pdb
+G:\Computyme\Computyme\Computyme\obj\Debug\Computyme.csprojAssemblyReference.cache
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\ApplicationInsights.config
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Computyme.dll.config
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Computyme.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Computyme.pdb
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\csc.exe
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\csc.exe.config
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\csc.rsp
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\csi.exe
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\csi.exe.config
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\csi.rsp
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.AppContext.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Console.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.IO.Compression.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.IO.Pipes.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.Claims.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.ValueTuple.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Xml.XPath.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\vbc.exe
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\vbc.exe.config
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\vbc.rsp
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\VBCSCompiler.exe
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Antlr3.Runtime.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Newtonsoft.Json.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Helpers.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Mvc.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Optimization.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Razor.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.WebPages.Deployment.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.WebPages.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.WebPages.Razor.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\U2.Data.Client.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\WebGrease.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.Data.Schema.ScriptDom.Sql.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.Data.Schema.ScriptDom.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Helpers.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Mvc.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Optimization.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Razor.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.WebPages.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.WebPages.Deployment.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.WebPages.Razor.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Newtonsoft.Json.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\U2.Data.Client.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Antlr3.Runtime.pdb
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.csprojAssemblyReference.cache
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.csproj.CoreCompileInputs.cache
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.csproj.CopyComplete
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.pdb
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.Web.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.ApplicationInsights.dll
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.PerfCounterCollector.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.Web.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\ApplicationInsights.config
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Computyme.dll.config
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Computyme.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Computyme.pdb
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\csc.exe
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\csc.exe.config
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\csc.rsp
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\csi.exe
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\csi.exe.config
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\csi.rsp
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.AppContext.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Console.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.IO.Compression.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.Claims.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.ValueTuple.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\vbc.exe
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\vbc.exe.config
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\vbc.rsp
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\VBCSCompiler.exe
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Antlr3.Runtime.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.Web.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Newtonsoft.Json.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Helpers.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Mvc.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Optimization.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Razor.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.WebPages.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.WebPages.Razor.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\WebGrease.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.PerfCounterCollector.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.Web.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Helpers.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Mvc.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Optimization.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.Razor.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.WebPages.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\System.Web.WebPages.Razor.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Newtonsoft.Json.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Antlr3.Runtime.pdb
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.csproj.CoreCompileInputs.cache
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.csproj.CopyComplete
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.pdb
