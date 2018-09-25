@@ -129,8 +129,34 @@ namespace Computyme.Controllers
         }
 
 
-        //AddProduct
-        public ActionResult AddProduct(Orders OrderlineItem, string action, string OrderID)
+
+        
+        public ActionResult DeleteProduct(String Product, string TransactionID)
+        {
+            List<Orders> ShoppingCart = HomeManager.ReadExistingOrders(TransactionID);
+
+
+            // Need to look at quantity too.
+            var itemToRemove = (from item in ShoppingCart
+                                where item.Serial == Product
+                                select item).FirstOrDefault();
+            ShoppingCart.Remove(itemToRemove);
+
+            if (HomeManager.DeleteProducts(ShoppingCart, TransactionID, Product))
+            {
+                if (HomeManager.InsertOrderItem(ShoppingCart, TransactionID))
+                {
+
+                }
+
+
+            }
+
+            return RedirectToAction("About");
+        }
+
+            //AddProduct
+            public ActionResult AddProduct(Orders OrderlineItem, string action, string OrderID)
         {
 
             OrderID = "5001";
@@ -193,6 +219,9 @@ namespace Computyme.Controllers
 
 
         }
+
+
+
 
         public ActionResult About()
         {

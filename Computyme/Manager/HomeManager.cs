@@ -113,6 +113,53 @@ namespace Computyme.Manager
             return Cart;
         }
 
+        public static bool  DeleteProducts(List<Orders> Cart,string OrderID, string Product)
+        {
+            ///     // First Insert, then Print, then Delete
+            try
+            {
+                Console.WriteLine(Environment.NewLine + "Start...");
+                U2ConnectionStringBuilder conn_bldr = new U2ConnectionStringBuilder();
+                conn_bldr.UserID = "Demo";
+                conn_bldr.Password = "Demo";
+                conn_bldr.Server = "localhost";
+                conn_bldr.ServerType = "universe";
+                conn_bldr.Database = "pwdemo";
+                conn_bldr.AccessMode = "Native";
+                conn_bldr.RpcServiceType = "uvcs";
+                string lConnStr = conn_bldr.ConnectionString;
+                U2Connection lConn = new U2Connection();
+                lConn.ConnectionString = lConnStr;
+                lConn.Open();
+                UniSession lUniSession = lConn.UniSession;
+              
+                U2Command cmd = lConn.CreateCommand();
+
+                // delete inserted value
+             
+                cmd.CommandText = string.Format("Action=Delete;File=SHOPPINGCART;Where=newrecid={0}", OrderID);
+                int l2 = cmd.ExecuteNonQuery();
+               
+
+                //close connection
+                lConn.Close();
+         
+
+            }
+            catch (Exception e2)
+            {
+                string lErr = e2.Message;
+                if (e2.InnerException != null)
+                {
+                    lErr += lErr + e2.InnerException.Message;
+                }
+              
+            }
+           // public static bool InsertOrderItem(List<Orders> LineItem, string OrderNumber)
+
+    
+                return true;
+        }
 
 
         public static List<Orders> GetProducts(List<Orders> Cart)

@@ -149,14 +149,13 @@
 
 
 
-
+@Scripts.Render("~/bundles/jqueryui/extended")
 
 @Scripts.Render("~/Scripts/ui1.12/jquery-ui.js")
 
 
 
 @Scripts.Render("~/bundles/jqgrid")
-@Scripts.Render("~/bundles/jqueryui/extended")
 
 @Scripts.Render("~/bundles/bootstrap")
 
@@ -351,6 +350,7 @@
             caption: "Transactions",
             footerrow: true,
             footerrow: true,
+           
             loadComplete: function (aRowids, status) {
 
                 var sum = grid.jqGrid('getCol', 'Cost', false, 'sum');
@@ -362,7 +362,6 @@
         });
 
 
-
         //$("#SARGrid").jqGrid('navGrid', '#SARGridPager',
         //    { add: false, view: true, del: true, edit: true, view: true }
         //    , editOptions /* Our edit options with handler */
@@ -370,23 +369,64 @@
         //    , DeleteOptions //{} /*delete options*/
         //    , { multipleSearch: false }
         //    , { closeOnEscape: true }
-        //);
+        //),
 
-        //var editOptions =
-        //{
-        //    top: 50,
-        //    left: "100",
-        //    //  width: 500
-        //    height: "auto",
-        //   width: "auto"
-        //    , closeOnEscape: true,
-        //    afterSubmit: fn_editSubmit,
-        //    editCaption: "Edit Vendor",
-        //    processData: "Processing...",
-        //    reloadAfterSubmit: true,
-        //    closeAfterEdit: true
+        //    //Edit Options. save key parameter will keybind the Enter key to submit.
+        //    {
+        //        editCaption: "Edit Post",
+        //        edittext: "Edit",
+        //        closeOnEscape: true,
+        //        closeAfterEdit: true,
+        //        savekey: [true, 13],
+        //        errorTextFormat: commonError,
+        //        width: "500",
+        //        reloadAfterSubmit: true,
+        //        bottominfo: "Fields marked with (*) are required",
+        //        top: "60",
+        //        left: "5",
+        //        right: "5",
+        //        onclickSubmit: function (response, postdata) {
+        //            //call edit button
+        //            EditComment(postdata);
+        //        }
+        //    },
+        //    //add Options. save key parameter will keybind the Enter key to submit.
+        //    {
+        //        addCaption: "Add Post",
+        //        addtext: "Add",
+        //        closeOnEscape: true,
+        //        closeAfterEdit: true,
+        //        savekey: [true, 13],
+        //        errorTextFormat: commonError,
+        //        width: "500",
+        //        reloadAfterSubmit: true,
+        //        bottominfo: "Fields marked with (*) are required",
+        //        top: "60",
+        //        left: "5",
+        //        right: "5",
+        //        onclickSubmit: function (response, postdata) {
+        //            AddPost(postdata);
+        //        }
+        //    },
+        //    //delete Options. save key parameter will keybind the Enter key to submit.
+        //    {
+        //        deleteCaption: "delete Post",
+        //        deletetext: "Delete Post",
+        //        closeOnEscape: true,
+        //        closeAfterEdit: true,
+        //        savekey: [true, 13],
+        //        errorTextFormat: commonError,
+        //        width: "500",
+        //        reloadAfterSubmit: true,
+        //        bottominfo: "Fields marked with (*) are required",
+        //        top: "60",
+        //        left: "5",
+        //        right: "5",
+        //        onclickSubmit: function (response, postdata) {
+        //            DeletePost(postdata);
+        //        }
+        //    }
 
-        //}
 
     });
 
@@ -396,7 +436,7 @@
         function formatImage(cellValue, options, rowObject)
         {
             // Will need to encrypt this as people can manipulate URL.
-            var imageHtml = "<a href='delete?Product=" + rowObject.Serial + "&TransactionID=" + @data.OrderID + "'><img src='../Content/Images/delete-icon.png' alt='my image' height='20' width='20'/></a>" + " | <img src='../Content/Images/Edit.png' alt='my image' height='20' width='20'/>";
+            var imageHtml = "<a href='DeleteProduct?Product=" + rowObject.Serial + "&TransactionID=" + @data.OrderID + "'><img src='../Content/Images/delete-icon.png' alt='my image' height='20' width='20'/></a>" + " | <img src='../Content/Images/Edit.png' alt='my image' height='20' width='20'/>";
             return imageHtml;
         }
 
