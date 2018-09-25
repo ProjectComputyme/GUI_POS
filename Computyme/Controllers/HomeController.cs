@@ -158,11 +158,11 @@ namespace Computyme.Controllers
 
 
 
-        public ActionResult Getorders(string sidx, string sord, int page, int rows, string OrderID)
+        public ActionResult Getorders(string sidx, string sord, int page, int rows, string Order_ID)
         {
 
-            OrderID = "5001";
-            List<Orders> ShoppingCart = Manager.HomeManager.ReadExistingOrders(OrderID);
+          
+            List<Orders> ShoppingCart = Manager.HomeManager.ReadExistingOrders(Order_ID);
 
             int pageIndex = 0;
             int pageSize = 0;
@@ -197,7 +197,9 @@ namespace Computyme.Controllers
         public ActionResult About()
         {
 
+            Computyme.Models.NewOrder.UniqueOrder OrderID = new Models.NewOrder.UniqueOrder { OrderID = "5001", UserID = "4561" };
 
+            ViewData["TransacionID"] = OrderID;
             return View();
         }
 
