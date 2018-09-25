@@ -127,10 +127,40 @@ namespace Computyme.Controllers
             return Json(ProductsFound, JsonRequestBehavior.AllowGet);
 
         }
+      
+        public ActionResult UpdateProduct(String Product, string TransactionID,string Quantity, string Cost)
+        {
+            List<Orders> ShoppingCart = HomeManager.ReadExistingOrders(TransactionID);
+            
+
+            // Need to look at quantity too.
+            var itemToRemove = (from item in ShoppingCart
+                                where item.Serial == Product
+                                select item).FirstOrDefault();
+            ShoppingCart.Remove(itemToRemove);
 
 
+            
 
-        
+
+            if (HomeManager.DeleteProducts(ShoppingCart, TransactionID, Product))
+            {
+
+                Orders ModifyCart = new Orders { Cost = Cost, Quantity = Quantity, Serial = Product };
+                ShoppingCart.Add(ModifyCart);
+
+                if (HomeManager.InsertOrderItem(ShoppingCart, TransactionID))
+                {
+
+                }
+
+
+            }
+
+            return RedirectToAction("About");
+        }
+
+
         public ActionResult DeleteProduct(String Product, string TransactionID)
         {
             List<Orders> ShoppingCart = HomeManager.ReadExistingOrders(TransactionID);
@@ -190,6 +220,9 @@ namespace Computyme.Controllers
           
             List<Orders> ShoppingCart = Manager.HomeManager.ReadExistingOrders(Order_ID);
 
+
+            List<Orders> test =  Manager.HomeManager.GetProducts(ShoppingCart);
+
             int pageIndex = 0;
             int pageSize = 0;
             int totalRecords = 0;
@@ -234,58 +267,58 @@ namespace Computyme.Controllers
 
         public ActionResult Contact()
         {
-            try
-            {
-                U2ConnectionStringBuilder conn_str = new U2ConnectionStringBuilder();
-                conn_str.UserID = "user";
-                conn_str.Password = "pass";
-                conn_str.Server = "localhost";
-                conn_str.Database = "HS.SALES";
-                conn_str.ServerType = "UNIVERSE";
-                conn_str.AccessMode = "Native";   // FOR UO
-                conn_str.RpcServiceType = "uvcs"; // FOR UO
-                conn_str.Pooling = false;
-                string s = conn_str.ToString();
-                U2Connection con = new U2Connection();
-                con.ConnectionString = s;
-                con.Open();
-                Console.WriteLine("Connected.........................");
+            //try
+            //{
+            //    U2ConnectionStringBuilder conn_str = new U2ConnectionStringBuilder();
+            //    conn_str.UserID = "user";
+            //    conn_str.Password = "pass";
+            //    conn_str.Server = "localhost";
+            //    conn_str.Database = "HS.SALES";
+            //    conn_str.ServerType = "UNIVERSE";
+            //    conn_str.AccessMode = "Native";   // FOR UO
+            //    conn_str.RpcServiceType = "uvcs"; // FOR UO
+            //    conn_str.Pooling = false;
+            //    string s = conn_str.ToString();
+            //    U2Connection con = new U2Connection();
+            //    con.ConnectionString = s;
+            //    con.Open();
+            //    Console.WriteLine("Connected.........................");
 
 
 
-                UniSession us1 = con.UniSession;
+            //    UniSession us1 = con.UniSession;
 
-                string RoutineName = "!TIMDAT";
-                int IntTotalAtgs = 1;
-                string[] largs = new string[IntTotalAtgs];
-                largs[0] = "1";
-                UniDynArray tmpStr2;
-                UniSubroutine sub = us1.CreateUniSubroutine(RoutineName, IntTotalAtgs);
+            //    string RoutineName = "!TIMDAT";
+            //    int IntTotalAtgs = 1;
+            //    string[] largs = new string[IntTotalAtgs];
+            //    largs[0] = "1";
+            //    UniDynArray tmpStr2;
+            //    UniSubroutine sub = us1.CreateUniSubroutine(RoutineName, IntTotalAtgs);
 
-                for (int i = 0; i < IntTotalAtgs; i++)
-                {
-                    sub.SetArg(i, largs[i]);
-                }
+            //    for (int i = 0; i < IntTotalAtgs; i++)
+            //    {
+            //        sub.SetArg(i, largs[i]);
+            //    }
 
-                sub.Call();
-                tmpStr2 = sub.GetArgDynArray(0);
-                string result = "\n" + "Result is :" + tmpStr2;
-                Console.WriteLine("  Response from UniSubRoutineSample :" + result);
+            //    sub.Call();
+            //    tmpStr2 = sub.GetArgDynArray(0);
+            //    string result = "\n" + "Result is :" + tmpStr2;
+            //    Console.WriteLine("  Response from UniSubRoutineSample :" + result);
 
 
-                con.Close();
+            //    con.Close();
 
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
 
-            }
-            finally
-            {
-                Console.WriteLine("Enter to exit:");
-                string line = Console.ReadLine();
-            }
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Enter to exit:");
+            //    string line = Console.ReadLine();
+            //}
         
             return View();
         }

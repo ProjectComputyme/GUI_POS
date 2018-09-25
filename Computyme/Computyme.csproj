@@ -329,6 +329,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\chartsJS\Chart.bundle.js" />
+    <Content Include="Scripts\chartsJS\Chart.js" />
+    <Content Include="Scripts\chartsJS\utils.js" />
     <Content Include="Scripts\jqGridExportToExcel.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -400,6 +403,14 @@
     <Content Include="Scripts\js\jquery.jqGrid.src.js" />
     <Content Include="Scripts\js\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\SlideOut\demo.html" />
+    <Content Include="Scripts\SlideOut\img\1.jpg" />
+    <Content Include="Scripts\SlideOut\img\2.jpg" />
+    <Content Include="Scripts\SlideOut\img\3.jpg" />
+    <Content Include="Scripts\SlideOut\img\bg.jpg" />
+    <Content Include="Scripts\SlideOut\img\plus.gif" />
+    <Content Include="Scripts\SlideOut\script.js" />
+    <Content Include="Scripts\SlideOut\styles.css" />
     <Content Include="Scripts\src\css\ui.jqgrid.css" />
     <Content Include="Scripts\src\css\ui.multiselect.css" />
     <Content Include="Scripts\src\grid.base.js" />

@@ -113,6 +113,59 @@ namespace Computyme.Manager
             return Cart;
         }
 
+        public static bool UpdateProducts(List<Orders> Cart, string OrderID, string Product)
+        {
+            try
+            {
+                int lRecID = 99;
+ 
+                U2ConnectionStringBuilder conn_bldr = new U2ConnectionStringBuilder();
+                conn_bldr.UserID = "administrator";
+                conn_bldr.Password = "mypass";
+                conn_bldr.Server = "myserver";
+                conn_bldr.ServerType = "universe";
+                conn_bldr.Database = "HS.SALES";
+                conn_bldr.AccessMode = "Native";
+                conn_bldr.RpcServiceType = "uvcs";
+                string lConnStr = conn_bldr.ConnectionString;
+                U2Connection lConn = new U2Connection();
+                lConn.ConnectionString = lConnStr;
+                lConn.Open();
+                UniSession lUniSession = lConn.UniSession;
+                U2Command cmd = lConn.CreateCommand();
+
+        //CUSTID,FNAME,LNAME : Single Value
+        //PRODID, BUY_DATE    : Multi Value
+        //Syntax : Action=Update;File=?;Attributes=?;Where=?;Sort
+
+
+        UniDynArray lArr = new UniDynArray(lUniSession, "2/1/1991");
+        lArr.Insert(1, -1, "3/9/1991");
+        lArr.Insert(1, -1, "4/1/1991");
+
+        string lCmd = string.Format("UPDATE SHOPPINGCART SET FNAME={0},BUY_DATE='{1}'  WHERE CUSTID={2} ", "Fred2", lArr.StringValue, lRecID);
+        cmd.CommandText = lCmd;
+        int l2 = cmd.ExecuteNonQuery();
+
+         lConn.Close();
+        
+
+            }
+            catch (Exception e2)
+            {
+                string lErr = e2.Message;
+                if (e2.InnerException != null)
+                {
+                    lErr += lErr + e2.InnerException.Message;
+                }
+
+            }
+            return true;
+    }
+
+
+
+
         public static bool  DeleteProducts(List<Orders> Cart,string OrderID, string Product)
         {
             ///     // First Insert, then Print, then Delete
@@ -179,16 +232,16 @@ namespace Computyme.Manager
             U2Connection con1 = new U2Connection();
             con1.ConnectionString = s;
             con1.Open();
-            Console.WriteLine("Connected.........................");
+
             U2Command cmd1 = con1.CreateCommand();
 
             foreach (var Product in shoppingCart)
             {
-                cmd1.CommandText = "SELECT [SALE] FROM IVMST WHERE ID=" + Product.Serial.ToString();
+                cmd1.CommandText = "SELECT [DESC_POS] FROM IVMST WHERE ID=" + Product.Serial.ToString();
                 U2DataReader dr1 = cmd1.ExecuteReader();
                 while (dr1.Read())
                 {
-                    Product.ProdDescription = string.Format(dr1["SALE"].ToString());
+                    Product.ProdDescription = string.Format(dr1["DESC_POS"].ToString());
                 }
             }
 
