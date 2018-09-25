@@ -4,115 +4,87 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Computyme</title>
-   
-    
-    @Styles.Render("~/Content/css")
+
+
+    <style>
+        /* Visit http://www.menucool.com/horizontal/javascript-menu for source code and other menu CSS templates */
+
+        #sse1 {
+            /*You can decorate the menu's container, such as adding background images through this block*/
+            background-color: #222;
+            height: 38px;
+            padding: 15px;
+            border-radius: 3px;
+            box-sizing: content-box;
+        }
+
+        #sses1 {
+            margin: 0 auto; /*This will make the menu center-aligned. Removing this line will make the menu align left.*/
+        }
+
+            #sses1 ul {
+                position: relative;
+                list-style-type: none;
+                float: left;
+                padding: 0;
+                margin: 0;
+                border-bottom: solid 1px #6C0000;
+            }
+
+            #sses1 li {
+                float: left;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                background-image: none;
+            }
+                /*CSS for background bubble*/
+                #sses1 li.highlight {
+                    background-color: #800;
+                    top: 36px;
+                    height: 2px;
+                    border-bottom: solid 1px #C00;
+                    z-index: 1;
+                    position: absolute;
+                    overflow: hidden;
+                }
+
+                #sses1 li a {
+                    box-sizing: content-box;
+                    height: 30px;
+                    padding-top: 8px;
+                    margin: 0 20px; /*used to adjust the distance between each menu item. Now the distance is 20+20=40px.*/
+                    color: #fff;
+                    font: normal 12px arial;
+                    text-align: center;
+                    text-decoration: none;
+                    float: left;
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                }
+    </style>
 
     @Scripts.Render("~/bundles/modernizr")
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript" src="~/Scripts/jquery.easing.1.3.js"></script>
+    @Scripts.Render("~/Scripts/jquery-3.3.1.js")
+  
 
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <div class="content">
-                    <h1 class="title">was</h1>
-
-                    <ul id="sdt_menu" class="sdt_menu">
-                        <li>
-                            <a href="/home/about">
-                                <img src="~/Content/images/POS.jpg" alt="" />
-                                <span class="sdt_active"></span>
-                                <span class="sdt_wrap">
-                                    <span class="sdt_link">POS</span>
-                                    <span class="sdt_descr">Enter Order</span>
-                                </span>
-                            </a>
-                            <div class="sdt_box">
-                                <a href="#">Modify</a>
-                                <a href="#">Search</a>
-
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="~/Content/Images/Accounting.jpg" alt="" />
-                                <span class="sdt_active"></span>
-                                <span class="sdt_wrap">
-                                    <span class="sdt_link">Accounting</span>
-                                    <span class="sdt_descr">Executive Dashboard</span>
-                                </span>
-                            </a>
-                            <div class="sdt_box">
-                                <a href="#">AR</a>
-                                <a href="#">AP</a>
-                                <a href="#">EDI</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="~/Content/Images/3.jpg" alt="" />
-                                <span class="sdt_active"></span>
-                                <span class="sdt_wrap">
-                                    <span class="sdt_link">Inventory</span>
-                                    <span class="sdt_descr">B</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="~/Content/Images/4.jpg" alt="" />
-                                <span class="sdt_active"></span>
-                                <span class="sdt_wrap">
-                                    <span class="sdt_link">A</span>
-                                    <span class="sdt_descr">B</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="~/Content/Images/5.jpg" alt="" />
-                                <span class="sdt_active"></span>
-                                <span class="sdt_wrap">
-                                    <span class="sdt_link">A</span>
-                                    <span class="sdt_descr">B</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="~/Content/Images/6.jpg" alt="" />
-                                <span class="sdt_active"></span>
-                                <span class="sdt_wrap">
-                                    <span class="sdt_link">A</span>
-                                    <span class="sdt_descr">B</span>
-                                </span>
-                            </a>
-                            <div class="sdt_box">
-                                <a href="#">A</a>
-                                <a href="#">B</a>
-                                <a href="#">C</a>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="content">              
+                    <div id="sse1">
+                        <div id="sses1">
+                            <ul>
+                                <li><a href="/home/about">Enter Order</a></li>
+                                <li><a href="?menu=1&skin=1&p=Horizontal-Menus">Accounting</a></li>
+                                <li><a href="?menu=1&skin=1&p=Web-Menus">Reporting</a></li>
+                            </ul>
+                        </div>
+                    </div> 
                 </div>
-                @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>*@
-                @Html.ActionLink("Photoware", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                @*<ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    </ul>*@
-
             </div>
         </div>
     </div>
@@ -123,73 +95,154 @@
             <p>&copy; @DateTime.Now.Year - Computyme</p>
         </footer>
     </div>
-    @*@Scripts.Render("~/bundles/jquery")*@
-
-    @*@Scripts.Render("~/bundles/jqgrid")*@
-    @*@Scripts.Render("~/bundles/jqueryui/extended")
-        @Scripts.Render("~/bundles/jqueryui")*@
-    @*@Scripts.Render("~/bundles/autocomplete")*@
-
-  
 
 
     @RenderSection("scripts", required: false)
+
 </body>
 </html>
 <script type="text/javascript">
-    $(function () {
-        /**
-        * for each menu element, on mouseenter,
-        * we enlarge the image, and show both sdt_active span and
-        * sdt_wrap span. If the element has a sub menu (sdt_box),
-        * then we slide it - if the element is the last one in the menu
-        * we slide it to the left, otherwise to the right
-        */
-        $('#sdt_menu > li').bind('mouseenter', function () {
-            var $elem = $(this);
-            $elem.find('img')
-                .stop(true)
-                .animate({
-                    'width': '170px',
-                    'height': '170px',
-                    'left': '0px'
-                }, 400, 'easeOutBack')
-                .andSelf()
-                .find('.sdt_wrap')
-                .stop(true)
-                .animate({ 'top': '140px' }, 500, 'easeOutBack')
-                .andSelf()
-                .find('.sdt_active')
-                .stop(true)
-                .animate({ 'height': '170px' }, 300, function () {
-                    var $sub_menu = $elem.find('.sdt_box');
-                    if ($sub_menu.length) {
-                        var left = '170px';
-                        if ($elem.parent().children().length == $elem.index() + 1)
-                            left = '-170px';
-                        $sub_menu.show().animate({ 'left': left }, 200);
-                    }
-                });
-        }).bind('mouseleave', function () {
-            var $elem = $(this);
-            var $sub_menu = $elem.find('.sdt_box');
-            if ($sub_menu.length)
-                $sub_menu.hide().css('left', '0px');
+    /*! Visit www.menucool.com for source code, other menu scripts and web UI controls
+  *  Please keep this notice intact. Thank you. */
 
-            $elem.find('.sdt_active')
-                .stop(true)
-                .animate({ 'height': '0px' }, 300)
-                .andSelf().find('img')
-                .stop(true)
-                .animate({
-                    'width': '0px',
-                    'height': '0px',
-                    'left': '85px'
-                }, 400)
-                .andSelf()
-                .find('.sdt_wrap')
-                .stop(true)
-                .animate({ 'top': '25px' }, 500);
-        });
-    });
+    var sse1 = function () {
+        var rebound = 20; //set it to 0 if rebound effect is not prefered
+        var slip, k;
+        return {
+            buildMenu: function () {
+                var m = document.getElementById('sses1');
+                if (!m) return;
+                var ul = m.getElementsByTagName("ul")[0];
+                m.style.width = ul.offsetWidth + 1 + "px";
+                var items = m.getElementsByTagName("li");
+                var a = m.getElementsByTagName("a");
+
+                slip = document.createElement("li");
+                slip.className = "highlight";
+                ul.appendChild(slip);
+
+                var url = document.location.href.toLowerCase();
+                k = -1;
+                var nLength = -1;
+                for (var i = 0; i < a.length; i++) {
+                    if (url.indexOf(a[i].href.toLowerCase()) != -1 && a[i].href.length > nLength) {
+                        k = i;
+                        nLength = a[i].href.length;
+                    }
+                }
+
+                if (k == -1 && /:\/\/(?:www\.)?[^.\/]+?\.[^.\/]+\/?$/.test) {
+                    for (var i = 0; i < a.length; i++) {
+                        if (a[i].getAttribute("maptopuredomain") == "true") {
+                            k = i;
+                            break;
+                        }
+                    }
+                    if (k == -1 && a[0].getAttribute("maptopuredomain") != "false")
+                        k = 0;
+                }
+
+                if (k > -1) {
+                    slip.style.width = items[k].offsetWidth + "px";
+                    //slip.style.left = items[k].offsetLeft + "px";
+                    sse1.move(items[k]); //comment out this line and uncomment the line above to disable initial animation
+                }
+                else {
+                    slip.style.visibility = "hidden";
+                }
+
+                for (var i = 0; i < items.length - 1; i++) {
+                    items[i].onmouseover = function () {
+                        if (k == -1) slip.style.visibility = "visible";
+                        if (this.offsetLeft != slip.offsetLeft) {
+                            sse1.move(this);
+                        }
+                    }
+                }
+
+                m.onmouseover = function () {
+                    if (slip.t2)
+                        slip.t2 = clearTimeout(slip.t2);
+                };
+
+                m.onmouseout = function () {
+                    if (k > -1 && items[k].offsetLeft != slip.offsetLeft) {
+                        slip.t2 = setTimeout(function () { sse1.move(items[k]); }, 50);
+                    }
+                    if (k == -1) slip.t2 = setTimeout(function () { slip.style.visibility = "hidden"; }, 50);
+                };
+            },
+            move: function (target) {
+                clearInterval(slip.timer);
+                var direction = (slip.offsetLeft < target.offsetLeft) ? 1 : -1;
+                slip.timer = setInterval(function () { sse1.mv(target, direction); }, 15);
+            },
+            mv: function (target, direction) {
+                if (direction == 1) {
+                    if (slip.offsetLeft - rebound < target.offsetLeft)
+                        this.changePosition(target, 1);
+                    else {
+                        clearInterval(slip.timer);
+                        slip.timer = setInterval(function () {
+                            sse1.recoil(target, 1);
+                        }, 15);
+                    }
+                }
+                else {
+                    if (slip.offsetLeft + rebound > target.offsetLeft)
+                        this.changePosition(target, -1);
+                    else {
+                        clearInterval(slip.timer);
+                        slip.timer = setInterval(function () {
+                            sse1.recoil(target, -1);
+                        }, 15);
+                    }
+                }
+                this.changeWidth(target);
+            },
+            recoil: function (target, direction) {
+                if (direction == -1) {
+                    if (slip.offsetLeft > target.offsetLeft) {
+                        slip.style.left = target.offsetLeft + "px";
+                        clearInterval(slip.timer);
+                    }
+                    else slip.style.left = slip.offsetLeft + 2 + "px";
+                }
+                else {
+                    if (slip.offsetLeft < target.offsetLeft) {
+                        slip.style.left = target.offsetLeft + "px";
+                        clearInterval(slip.timer);
+                    }
+                    else slip.style.left = slip.offsetLeft - 2 + "px";
+                }
+            },
+            changePosition: function (target, direction) {
+                if (direction == 1) {
+                    //following +1 will fix the IE8 bug of x+1=x, we force it to x+2
+                    slip.style.left = slip.offsetLeft + Math.ceil(Math.abs(target.offsetLeft - slip.offsetLeft + rebound) / 10) + 1 + "px";
+                }
+                else {
+                    //following -1 will fix the Opera bug of x-1=x, we force it to x-2
+                    slip.style.left = slip.offsetLeft - Math.ceil(Math.abs(slip.offsetLeft - target.offsetLeft + rebound) / 10) - 1 + "px";
+                }
+            },
+            changeWidth: function (target) {
+                if (slip.offsetWidth != target.offsetWidth) {
+                    var diff = slip.offsetWidth - target.offsetWidth;
+                    if (Math.abs(diff) < 4) slip.style.width = target.offsetWidth + "px";
+                    else slip.style.width = slip.offsetWidth - Math.round(diff / 3) + "px";
+                }
+            }
+        };
+    }();
+
+    if (window.addEventListener) {
+        window.addEventListener("load", sse1.buildMenu, false);
+    }
+    else if (window.attachEvent) {
+        window.attachEvent("onload", sse1.buildMenu);
+    }
+    else {
+        window["onload"] = sse1.buildMenu;
+    }
 </script>

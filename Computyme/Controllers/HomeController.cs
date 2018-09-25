@@ -9,6 +9,9 @@ using System.Data;
 using Computyme.Models;
 using Computyme.Models.APMST;
 using System.Configuration;
+using Computyme.Manager;
+
+// Lets test the change
 
 namespace Computyme.Controllers
 {
@@ -80,17 +83,13 @@ namespace Computyme.Controllers
 
                 string s = ConfigurationManager.AppSettings["TESTString"];
 
-                //UniSession us1 = con.UniSession;
-                //UniSubroutine sub = us1.CreateUniSubroutine(RoutineName, IntTotalAtgs);
-
                 U2Connection con = new U2Connection();
                 U2Command cmd = con.CreateCommand();
                  con.ConnectionString = s;
                 con.Open();
 
                 cmd.CommandText = "SELECT PROD,SALE, DESC1 FROM IVMST WHERE UPPER(DESC1) LIKE '%" + Upperterm + "%'";
-                //tcl 
-                //cmd.CommandText = "LIST IVMST SALE DESC WITH DESC LIKE ..." + term + "...";
+       
                 U2DataReader dr = cmd.ExecuteReader();
 
                 while (dr.Read())
@@ -131,7 +130,26 @@ namespace Computyme.Controllers
 
 
         //AddProduct
-        public ActionResult AddProduct(Orders OrderlineItem)
+        public ActionResult AddProduct(Orders OrderlineItem, string action, string OrderID)
+        {
+
+            OrderID = "5001";
+            // Need to do a read on all items. 
+            List<Orders> ShoppingCart = HomeManager.ReadExistingOrders(OrderID);            
+            Orders LineItem = new Orders { Cost = OrderlineItem.Cost, Quantity = OrderlineItem.Quantity, Serial = OrderlineItem.Serial };
+            ShoppingCart.Add(LineItem);
+
+            if (HomeManager.InsertOrderItem(ShoppingCart, OrderID))
+            {
+            }
+            else { }
+            return RedirectToAction("About");
+        }
+
+
+
+
+        public ActionResult PullProcessSar( string SAR_ID, string Type, string disposistion)
         {
 
             var jsonDataa = "L";
@@ -140,17 +158,45 @@ namespace Computyme.Controllers
 
 
 
-
-        public ActionResult PullProcessSar(string SAR_ID, string Type, string disposistion)
+        public ActionResult Getorders(string sidx, string sord, int page, int rows, string OrderID)
         {
 
-            var jsonDataa = "L";
-            return Json(jsonDataa, JsonRequestBehavior.AllowGet);
+            OrderID = "5001";
+            List<Orders> ShoppingCart = Manager.HomeManager.ReadExistingOrders(OrderID);
+
+            int pageIndex = 0;
+            int pageSize = 0;
+            int totalRecords = 0;
+            int totalPages = 0;
+        
+
+            pageIndex = Convert.ToInt32(page) - 1;
+            pageSize = rows;
+            totalRecords = ShoppingCart.Count();
+            totalPages = (int)Math.Ceiling((float)totalRecords / (float)pageSize);
+
+
+            var jsonData = new
+            {
+                total = (int)Math.Ceiling((float)totalRecords / (float)pageSize), //number of pages
+                page = 1, //current page
+                pageIndex = Convert.ToInt32(page) - 1,
+                pageSize = rows,
+                totalRecords = ShoppingCart.Count(),
+                records = ShoppingCart.Count(),
+                totalPages = (int)Math.Ceiling((float)totalRecords / (float)pageSize),//total items
+                rows = ShoppingCart
+            };
+
+            return Json(jsonData, JsonRequestBehavior.AllowGet);
+
+
+
         }
 
-            public ActionResult About()
+        public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+
 
             return View();
         }

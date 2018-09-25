@@ -10,5 +10,6 @@ namespace Computyme.Models
         public string Serial { get; set; }
         public string Quantity { get; set; }
         public string Cost { get; set; }
+        public string ProdDescription { get; set; }
     }
 }

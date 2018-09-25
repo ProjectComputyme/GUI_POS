@@ -15,9 +15,10 @@ p {
   font-weight: 200;
 }
 .container {
-  max-width: 940px;
-  margin-right: auto;
-  margin-left: auto;
+  
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* EFFECTS
@@ -52,6 +53,15 @@ p {
 
 /* MARKETING
 ***************/
+
+.jumbotronOrders {
+    position: relative;
+    padding: 3em 0;
+    text-align: center;
+    background: #f7f4f4;
+    border-style:solid;
+    border-color:black;
+}
 
 .jumbotron {
   position: relative;
@@ -245,6 +255,8 @@ p {
 
 /* FORM
 *********/
+
+
 
 form .control {
   margin-bottom: 5px;

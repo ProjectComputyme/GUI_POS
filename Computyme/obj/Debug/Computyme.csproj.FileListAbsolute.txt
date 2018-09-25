@@ -189,6 +189,8 @@ C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Mi
 C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.Web.xml
 C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\mklass.PROMASTER\Desktop\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.csprojAssemblyReference.cache
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.csproj.CoreCompileInputs.cache
 C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\ApplicationInsights.config
 C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Computyme.dll.config
 C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Computyme.dll
@@ -278,7 +280,8 @@ C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computy
 C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Newtonsoft.Json.xml
 C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Antlr3.Runtime.pdb
 C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.csproj.CoreCompileInputs.cache
 C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.csproj.CopyComplete
 C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.dll
 C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\obj\Debug\Computyme.pdb
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.Data.Schema.ScriptDom.Sql.dll
+C:\Users\Demo\Documents\Visual Studio 2017\COMP\GUI_POS-master\Computyme\Computyme\bin\Microsoft.Data.Schema.ScriptDom.dll
