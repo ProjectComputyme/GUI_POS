@@ -161,6 +161,7 @@
     </Compile>
     <Compile Include="Manager\HomeManager.cs" />
     <Compile Include="Models\APMST\APMST.cs" />
+    <Compile Include="Models\Customer\Customer.cs" />
     <Compile Include="Models\NewOrder\UniqueOrder.cs" />
     <Compile Include="Models\Orders.cs" />
     <Compile Include="Models\Product.cs" />
@@ -175,6 +176,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\CSS\CCstyle.css" />
     <Content Include="Content\CSS\style.css" />
     <Content Include="Content\Images\1.jpg" />
     <Content Include="Content\Images\2.jpg" />
@@ -184,8 +186,10 @@
     <Content Include="Content\Images\6.jpg" />
     <Content Include="Content\Images\Accounting.jpg" />
     <Content Include="Content\Images\bg.jpg" />
+    <Content Include="Content\Images\card_chip.png" />
     <Content Include="Content\Images\overlay.png" />
     <Content Include="Content\Images\POS.jpg" />
+    <Content Include="Content\Images\visa.png" />
     <Content Include="Content\jquery.jqGrid\ui.jqgrid.css" />
     <Content Include="Content\themes\apple\bg.jpg" />
     <Content Include="Content\themes\apple\d.png" />
@@ -396,6 +400,7 @@
     <Content Include="Scripts\js\i18n\grid.locale-tw.js" />
     <Content Include="Scripts\js\i18n\grid.locale-ua.js" />
     <Content Include="Scripts\js\i18n\grid.locale-vi.js" />
+    <Content Include="Scripts\js\index.js" />
     <Content Include="Scripts\js\install.txt" />
     <Content Include="Scripts\js\jquery-1.11.0.min.js" />
     <Content Include="Scripts\js\jquery.contextmenu.js" />
@@ -711,6 +716,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\CC.cshtml" />
+    <Content Include="Views\Home\Customer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

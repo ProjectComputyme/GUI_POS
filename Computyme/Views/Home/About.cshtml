@@ -76,12 +76,22 @@
         outline: none;
     }
 
-        .form-style-2 .input-field:focus,
-        .form-style-2 .tel-number-field:focus,
-        .form-style-2 .textarea-field:focus,
-        .form-style-2 .select-field:focus {
-            border: 1px solid #0C0;
-        }
+
+    .ui-jqgrid tr.jqgrow td {
+        font-size: 20px;
+    }
+
+
+    .ui-jqgrid tr.footrow td {
+        font-size: 20px;
+    }
+
+    .ui-corner-all{
+    font-size: 20px;
+    }
+        .form-style-2 .input-field:focus, .form-style-2 .tel-number-field:focus, .form-style-2 .textarea-field:focus, .form-style-2 .select-field:focus {
+        border: 1px solid #0C0;
+    }
 
     .form-style-2 .textarea-field {
         height: 100px;
@@ -136,6 +146,17 @@
         zoom: 1;
         background-color: cornflowerblue;
     }
+
+    .test {
+        margin-left: 720px !important;
+        background: #0C0 !important;
+        position: relative;
+       
+        bottom: 30px;
+    }
+
+   
+
 </style>
 
 
@@ -144,48 +165,35 @@
 
 
 @Styles.Render("~/Content/themes/redmond/ui.jqgrid.css")
-@*@Styles.Render("~/Content/themes/redmond/jquery-ui-1.10.4.custom.css")*@
 @Styles.Render("~/Content/themes/redmond/JqueryCustomUI.css")
-
-
-
 @Scripts.Render("~/bundles/jqueryui/extended")
-
 @Scripts.Render("~/Scripts/ui1.12/jquery-ui.js")
-
-
-
 @Scripts.Render("~/bundles/jqgrid")
-
 @Scripts.Render("~/bundles/bootstrap")
-
-
-
-
-@*<link rel="stylesheet" type="text/css" href="../css/redmond/jquery-ui-1.7.2.custom.css" />*@
 
 
 
 @{ var data = (UniqueOrder)ViewData["TransacionID"];}
 
+@*POS Entry - *@
 
 <div class="form-style-2">
-    <div class="form-style-2-heading">Order Entry - Order ID: @data.OrderID - User ID: @data.UserID</div>
-    <form id="Apply" action="/Home/AddProduct" method="post">
+    <div class="form-style-2-heading">POS Entry - Invoice #: @data.OrderID - User ID: @data.UserID</div>
+    <form id="Apply" action="/Home/AddProduct?OrderID=@data.OrderID" method="post">
         <table>
             <tr>
                 <td style="width: 20%;"><label for="Products">Products</label></td>
                 <td style="width: 20%;"><label for="Description">Description</label></td>
                 <td style="width: 20%;"><label for="Serial">Serial | List</label></td>
-                <td style="width: 20%;"><label for="Quantity">Quantity *</label></td>
-                <td style="width: 20%;"><label for="Cost">Sale *</label></td>
+                <td style="width: 20%;"><label for="Quantity">Quantity</label></td>
+                <td style="width: 20%;"><label for="Cost">&nbsp;&nbsp;&nbsp;&nbsp; Sale</label></td>
 
             </tr>
             <tr>
-                <td style="width: 20%;"><input type="text" id="Product" name="Product" class="text ui-widget-content ui-corner-all"></td>
+                <td style="width: 20%;"><input type="text" style="width:150px;" id="Product" name="Product" class="text ui-widget-content ui-corner-all"></td>
                 <td style="width: 20%;"><input id="Description" name="Description" type="text" style="width: 320px;" class="required  ui-widget-content ui-corner-all form-control"></td>
-                <td style="width: 20%;"><input id="Serial" name="Serial" type="text" style="width: 75px;" class="required  ui-widget-content ui-corner-all form-control"></td>
-                <td style="width: 20%;"><input id="Quantity" name="Quantity" type="number" style="width:80px;" value="1" class="required  ui-widget-content ui-corner-all form-control"></td>
+                <td style="width: 20%;"><input id="Serial" name="Serial" type="text" style="width: 155px;" class="required  ui-widget-content ui-corner-all form-control"></td>
+                <td style="width: 20%;"><input id="Quantity" name="Quantity" type="number" style="width:40px;" value="1" class="required  ui-widget-content ui-corner-all form-control"></td>
                 <td style="width: 20%;"><input id="Cost" name="Cost" type="number" step="0.01" style="width:110px;" class="required  ui-widget-content ui-corner-all form-control"></td>
             </tr>
         </table>
@@ -193,6 +201,7 @@
         <p> <input type="submit" value="Enter" class="btn btn-primary btn-lg"> </p>
     </form>
 
+    <p>  <input type="submit" id="Pay" name="Pay" value="Pay" class="test"> </p>
 
     @*<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
 
@@ -204,107 +213,26 @@
         </div>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-4">
-        <h2>Contact Information</h2>
-
-
-        <table class="Customertable">
-            <tr>
-
-                <td>
-                    Name: Steve Love
-                </td>
-
-
-            </tr>
-
-            <tr>
-
-                <td>
-                    Address:
-                </td>
-
-
-            </tr>
-            <tr>
-
-                <td>
-                    City:
-                </td>
-
-
-            </tr>
-            <tr>
-
-                <td>
-                    State:
-                </td>
-
-
-            </tr>
-            <tr>
-
-                <td>
-                    Zip:
-                </td>
-
-
-            </tr>
-            <tr>
-
-                <td>
-                    E-Mail Steve Love
-                </td>
-
-
-            </tr>
-        </table>
-
-
-        <br />
-        <br />
 
 
 
-        <input type="submit" value="Modify" class="btn btn-primary btn-lg">
-
-    </div>
-    <div class="col-md-4">
-        <h2>Warranty</h2>
-        <p> </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2> Transaction Summary</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+<table>
 
 
-@*// Build a JQgrid here.*@
+    <tr>
+        <td>@Html.Partial("Customer")
+        <td>
+        <td>
+            <div id="PayModule" style="display:none;">
+
+                @*@Html.Partial("CC", "Member", new { OrderID = data.OrderID })*@
+                @Html.Partial("CC", null, new ViewDataDictionary { { "OrderID", data.OrderID } })
+            </div>
+        </td>
+    </tr>
+</table>
 
 
-@*<link rel="stylesheet" type="text/css" href="~/Scripts/SlideOut/styles.css" />
-<script type="text/javascript" src="~/Scripts/SlideOut/script.js"></script>
-
-
-<div class="main">
-
-
-    
-    <p title="2200+ Twitter Followers" class="openTop openLeft blue" style="top:400px;left:650px;">
-        Become one of our twitter followers and receive every design and development update we share with the community.
-        <a href="http://twitter.com/Tutorialzine"><img src="img/2.jpg" title="Follow us" class="spaceTop" alt="Follow us on twitter" width="460" height="210" /></a>
-    </p>
-    
-    <p title="Over 5000 RSS Subscribers" class="openTop red" style="top:500px;left:90px;">
-        Subscribe to our RSS feed and receive our tutorials the instant they are published.
-        <a href="http://feeds.feedburner.com/Tutorialzine"><img src="img/3.jpg" class="spaceTop" alt="Subscribe" title="Subscribe" width="400" height="180" /></a>
-    </p>
-
-</div>*@
 
 
 
@@ -326,12 +254,13 @@
             datatype: "json",
             height: "auto",
             //PROD,QUAN,SALE  Serial: "76043", Quantity: "1", Cost: "14.99"
-            colNames: ["Product", "Sale", "Quantity", "Actions"],
+            colNames: ["Product","Description", "Sale", "Quantity", "Actions"],
             colModel: [
-                { name: 'Serial', index: 'Serial', width: 100, align: 'left', key: true  },
-                { name: 'Cost', index: 'Cost', width: 100, align: 'left', editable: true  },
-                { name: 'Quantity', index: 'Quantity', width: 100, align: 'left', editable: true  },
-                { name: 'Action', width: 75, align: "center", formatter: formatImage }
+                { name: 'Serial', index: 'Serial', width: 100, align: 'right', key: true },
+                { name: 'ProdDescription', index: 'ProdDescription', width: 400, align: 'left' },
+                { name: 'Cost', index: 'Cost', width: 100, align: 'right', editable: true  },
+                { name: 'Quantity', index: 'Quantity', width: 60, align: 'right', editable: true  },
+                { name: 'Action', width: 125, align: "center", formatter: formatImage }
             ],
             cellEdit: true,
             cellsubmit: 'clientArray',
@@ -473,6 +402,12 @@
     });
 
 
+    $('#Pay').click(function () {
+        $('#PayModule').show();
+    });
+
+
+
     $("#sendAll").click(function () {
 
         var localGridData = $("#SARGrid").jqGrid('getGridParam', 'data');
@@ -531,17 +466,13 @@
             })
         },
         select: function (event, ui) {
-
             $("input#Description").val(ui.item.productDesc);
             $("input#Serial").val(ui.item.value);
             $("input#Cost").val(ui.item.cost);
-
+            $("input#Product").val(ui.item.value);           
             return false;
         }
     });
-
-
-
 
 </script>
 

@@ -39,7 +39,7 @@ namespace Computyme.Manager
 
                 //Unique sale ID or invoice Number. Do we add userid as well?
                 // We will work with the assumption that it's one order - 5001
-                int newrecid = 5001;
+                int newrecid = Convert.ToInt32(OrderNumber);
 
 
                 UniDynArray Product = new UniDynArray(lUniSession);
@@ -87,7 +87,7 @@ namespace Computyme.Manager
         {            
             List<Orders> Cart = new List<Orders>();
             
-            OrderID = "5001";
+            OrderID = OrderID;
             string connection = ConfigurationManager.AppSettings["MVWriter"];
 
             U2Connection con = new U2Connection();          
@@ -166,6 +166,9 @@ namespace Computyme.Manager
 
 
 
+
+
+
         public static bool  DeleteProducts(List<Orders> Cart,string OrderID, string Product)
         {
             ///     // First Insert, then Print, then Delete
@@ -237,12 +240,21 @@ namespace Computyme.Manager
 
             foreach (var Product in shoppingCart)
             {
-                cmd1.CommandText = "SELECT [DESC_POS] FROM IVMST WHERE ID=" + Product.Serial.ToString();
-                U2DataReader dr1 = cmd1.ExecuteReader();
-                while (dr1.Read())
+                try
                 {
-                    Product.ProdDescription = string.Format(dr1["DESC_POS"].ToString());
+                    cmd1.CommandText = "SELECT [DESC_POS] FROM IVMST WHERE ID=" + Product.Serial.ToString();
+                    U2DataReader dr1 = cmd1.ExecuteReader();
+
+                    while (dr1.Read())
+                    {
+                        Product.ProdDescription = string.Format(dr1["DESC_POS"].ToString());
+                        dr1.Close();
+                    }
                 }
+                catch (Exception ex)
+                {
+                }
+             
             }
 
 

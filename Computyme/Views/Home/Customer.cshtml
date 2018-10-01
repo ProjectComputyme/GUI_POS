@@ -1,0 +1,206 @@
+﻿
+@{
+    ViewBag.Title = "Customer";
+}
+
+
+
+<style>
+    .wrapper {
+        width: 450px;
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+
+    /*.ui-accordion .ui-accordion-header {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        margin-top: 6px;
+        padding: 0em 0em 0em 0em;
+        zoom: 1;
+    }*/
+
+</style>
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
+
+</head>
+
+
+
+
+<div class="form-style-2">
+    <div class="wrapper">
+        <div id="accordion">
+            <h3>Customer Look Up</h3>
+            <div>
+                <p>
+
+                    <table>
+                        <tr>
+                            <td style="width: 20%;"><label for="FindSearchLname">Last Name</label></td>
+                            <td style="width: 20%;"><input type="text" id="FindSearchLname" name="FindSearchLname" class="text ui-widget-content ui-corner-all"></td>
+
+                        </tr>
+                        <tr>
+                            <td style="width: 20%;"><label for="FindSearchFname">First Name</label></td>
+                            <td style="width: 20%;"><input type="text" id="FindSearchFname" name="FindSearchFname" class="text ui-widget-content ui-corner-all"></td>
+
+                        </tr>
+
+                        <tr>
+                            <td style="width: 20%;"><label for="Cell">Phone</label></td>
+                            <td style="width: 20%;"><input type="text" id="FindCell" name="FindCell" class="text ui-widget-content ui-corner-all"></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20%;"><label for="Cell">Address</label></td>
+                            <td style="width: 20%;"><input type="text" id="FindAddress" name="FindAddress" class="text ui-widget-content ui-corner-all"></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20%;"><label for="Cell">Email</label></td>
+                            <td style="width: 20%;"><input type="text" id="SearchEmail" name="SearchEmail" class="text ui-widget-content ui-corner-all"></td>
+                        </tr>
+
+                    </table>
+
+
+                </p>
+            </div>
+            <h3>New Customer</h3>
+            <div>
+                <p>
+                    <table>
+                        <tr>
+                            <td style="width: 20%;"><label for="Lname">Last Names</label></td>
+                            <td style="width: 20%;"><input type="text" id="LastFname" name="LastFname" class="text ui-widget-content ui-corner-all"></td>
+
+                        </tr>
+                        <tr>
+                            <td style="width: 20%;"><label for="Fname">First Name</label></td>
+                            <td style="width: 20%;"><input type="text" id="NewFname" name="NewFname" class="text ui-widget-content ui-corner-all"></td>
+
+                        </tr>
+
+                        <tr>
+                            <td style="width: 20%;"><label for="Cell">Phone</label></td>
+                            <td style="width: 20%;"><input type="text" id="Cell" name="Cell" class="text ui-widget-content ui-corner-all"></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20%;"><label for="Cell">Address</label></td>
+                            <td style="width: 20%;"><input type="text" id="Address" name="Address" class="text ui-widget-content ui-corner-all"></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20%;"><label for="Cell">Zip</label></td>
+                            <td style="width: 20%;"><input type="text" id="ZIP" name="ZIP" class="text ui-widget-content ui-corner-all"></td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $("#FindSearchFname").autocomplete({
+        source: function (request, response) {
+            $.ajax({
+                url: "/Home/GetCustomer",
+                dataType: "json",
+                delay: 1,
+                data: {
+                    term: request.term
+                },
+
+                success: function (data) {
+                    response($.map(data, function (item, i) {
+                        return {
+                            label: item.Fname + " " + item.Lname + " - " + item.Address,
+                            value: item.Fname,
+                            Addy: item.Address,
+                            Phone: item.Cell,
+                            Lname: item.Lname,
+                            email: item.Email
+                        }
+                    }))
+
+                }
+            })
+        },
+        select: function (event, ui) {
+
+            $("input#FindSearchFname").val(ui.item.value);
+            $("input#FindSearchLname").val(ui.item.Lname);      
+            $("input#FindAddress").val(ui.item.Addy);
+            $("input#FindCell").val(ui.item.Phone);
+            $("input#SearchEmail").val(ui.item.email);
+            
+
+            return false;
+        }
+    });
+
+
+    $("#FindSearchLname").autocomplete({
+        source: function (request, response) {
+            $.ajax({
+                url: "/Home/GetCustomer",
+                dataType: "json",
+                delay: 1,
+                data: {
+                    term: request.term
+                },
+
+                success: function (data) {
+                    response($.map(data, function (item, i) {
+                        return {
+                            label: item.Fname + " " + item.Lname + " - " + item.Address,
+                            value: item.Fname,
+                            Addy: item.Address,
+                            Phone: item.Cell,
+                            Lname: item.Lname,
+                            email: item.Email
+                        }
+                    }))
+
+                }
+            })
+        },
+        select: function (event, ui) {
+
+            //    Fname = dr["NAME_1"].ToString(),
+            //    Address = dr["ADDR_1"].ToString(),
+            //    Cell = dr["Phone_1"].ToString()
+
+
+
+            //FindCell
+            //FindAddress
+            //FindFname
+            //FindLname
+
+            $("input#FindSearchFname").val(ui.item.value);
+            $("input#FindSearchLname").val(ui.item.Lname);
+            $("input#FindAddress").val(ui.item.Addy);
+            $("input#FindCell").val(ui.item.Phone);
+            $("input#SearchEmail").val(ui.item.email);
+
+            return false;
+        }
+    });
+</script>
